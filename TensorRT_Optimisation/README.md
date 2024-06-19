@@ -1,13 +1,13 @@
-Running YoloV7 with TensorRT Engine on Jetson.
+Running YoloV8 with TensorRT Engine on Jetson.
 ==========
 
-This repository contains step by step guide to build and convert YoloV7 model into a TensorRT engine on Jetson. This has been tested on Jetson Nano or Jetson Xavier.
+This repository contains step by step guide to build and convert YoloV8 model into a TensorRT engine on Jetson. This has been tested on Jetson Nano or Jetson Xavier.
 
 Please install Jetpack OS version 4.6 as mentioned by Nvidia and follow below steps.
 
-Build YoloV7 TensorRT Engine on Jetson Nano: 
+Build YoloV8 TensorRT Engine on Jetson Nano: 
 
-Object Detection YoloV7 TensorRT Engine on Jetson Nano: 
+Object Detection YoloV8 TensorRT Engine on Jetson Nano: 
 
 
 Install Libraries
@@ -66,31 +66,31 @@ This marks the installation of all the required libraries.
 
 Generate wts file from pt file
 =============
-Yolov7-tiny.pt is already provided in the repo. But if you want you can download any other version of the yolov7 model. Then run below command to convert .pt file into .wts file 
+YoloV8-tiny.pt is already provided in the repo. But if you want you can download any other version of the YoloV8 model. Then run below command to convert .pt file into .wts file 
 
-	$ python3 gen_wts.py -w yolov7-tiny.pt -o yolov7-tiny.wts
+	$ python3 gen_wts.py -w YoloV8-tiny.pt -o YoloV8-tiny.wts
 	
 Make
 =============
-Create a build directory inside yolov5. Copy and paste generated wts file into build directory and run below commands. If using custom model, make sure to update kNumClas in yolov7/include/config.h
+Create a build directory inside yolov5. Copy and paste generated wts file into build directory and run below commands. If using custom model, make sure to update kNumClas in YoloV8/include/config.h
 
-	$ cd yolov7/
+	$ cd YoloV8/
 	$ mkdir build
 	$ cd build
-	$ cp ../../yolov7-tiny.wts .
+	$ cp ../../YoloV8-tiny.wts .
 	$ cmake ..
 	$ make 
 	
 Build Engine file 
 =============
 
-    $ sudo ./yolov7 -s yolov7-tiny.wts  yolov7-tiny.engine t
+    $ sudo ./YoloV8 -s YoloV8-tiny.wts  YoloV8-tiny.engine t
 	
 
 Testing Engine file 
 =============
 
-	$ sudo ./yolov7 -d yolov7-tiny.engine ../images
+	$ sudo ./YoloV8 -d YoloV8-tiny.engine ../images
 	
 This will do inferencing over images and output will be saved in build directory.
 
