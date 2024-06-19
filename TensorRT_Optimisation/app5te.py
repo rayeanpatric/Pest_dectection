@@ -3,7 +3,7 @@ import imutils
 from yoloDet import YoloTRT
 
 # Use path for library and engine file
-model = YoloTRT(library="yolov7/build/libmyplugins.so", engine="yolov7/build/yolov7-tiny.engine", conf=0.5, yolo_ver="v7")
+model = YoloTRT(library="yolov8/build/libmyplugins.so", engine="yolov8/build/yolov8-tiny.engine", conf=0.5, yolo_ver="v7")
 
 # Open the CSI camera (you may need to adjust the index)
 cap = cv2.VideoCapture('/dev/video0', cv2.CAP_V4L2)
