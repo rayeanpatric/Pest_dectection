@@ -56,6 +56,9 @@ Farmers face significant challenges due to insect infestations which can lead to
 
 ##Datasets
 The dataset should include a diverse set of insect images captured in various agricultural settings. Data augmentation techniques are recommended to enhance the model's performance on real-time data.
+### Forty Insect classes in the NBAIR insect dataset (Cropped and Preprocessed)
+![cs-102403-Figure_2](https://github.com/yogaV28/Pest_dectection/assets/121656366/290bf37f-9c47-4c43-a54c-fd0b3267d0f1)
+
 
 ## Model Training
 1. Prepare the dataset and configure the training parameters.
@@ -74,6 +77,16 @@ The dataset should include a diverse set of insect images captured in various ag
 ## Results
 The optimized YOLOv8 model achieved an inference speed of 45 fps on the Jetson Nano.
 High accuracy with precision, recall, and F1-scores exceeding 95%.
+
+### Training (Top row) and Validation loss (Bottom row) for the optimized YOLOv8 model with the augmented Insects dataset
+![cs-102403-Figure_6](https://github.com/yogaV28/Pest_dectection/assets/121656366/af4574ac-d2a3-44dd-b3d2-ce162df023fa)
+### Precision(Left), F1-Score(Middle) and Recall(Right) metrics of the model
+![cs-102403-Figure_9](https://github.com/yogaV28/Pest_dectection/assets/121656366/8d627d3c-d40c-4402-af06-ab89fbdfcd1c)
+### Precision-Recall Curve(Left) and Confusion Matrix(Right) for the proposed model
+![cs-102403-Figure_10](https://github.com/yogaV28/Pest_dectection/assets/121656366/4cb21f01-2283-468f-bfbc-cc4f8e817410)
+### Results of test cases with Predicted labels(left) and True labels(right)
+![image](https://github.com/yogaV28/Pest_dectection/assets/121656366/a26d93ab-ab47-4a05-a688-56562e1a6a11)
+
 
 ## Contributors
 Balaji Ganesh Rajagopal - SRM Institute of Science and Technology
