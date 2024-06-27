@@ -91,4 +91,4 @@ Yoga Vignesh V - SRM Institute of Science and Technology
 Saravana Balaji B - De Montfort University Kazakhstan
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [link](LICENSE) file for details.
