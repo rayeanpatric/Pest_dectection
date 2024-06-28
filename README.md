@@ -68,6 +68,8 @@ The dataset should include a diverse set of insect images captured in various ag
 ## Optimization
 1. Use TensorRT to optimize the trained YOLOv8 model.
 2. Quantize the model to reduce memory usage and improve inference speed.
+![image](https://github.com/yogaV28/Pest_dectection/assets/121656366/27076fe5-564b-43db-8adc-6d2134517821)
+
    
 ## Inference
 1. Load the optimized model on the Jetson Nano.
