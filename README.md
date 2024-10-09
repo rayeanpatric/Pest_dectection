@@ -95,15 +95,7 @@ Balaji Ganesh Rajagopal - SRM Institute of Science and Technology
 
 Jagadeesh Kannan R - SRM Institute of Science and Technology
 
-Omar Khattab - Kuwait College of Science and Technology
-
-M. Omar Al-Kadri - University of Doha for Science and Technology
-
-Somaiyeh MahmoudZadeh - University of Doha for Science and Technology
-
 Yoga Vignesh V - SRM Institute of Science and Technology
-
-Saravana Balaji B - De Montfort University Kazakhstan
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
