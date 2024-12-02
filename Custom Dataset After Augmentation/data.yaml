@@ -1,13 +1,11 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
-
+train: /home/balajigrajagopal/pest1/Pest_dectection/cdata/train/images/
+val: /home/balajigrajagopal/pest1/Pest_dectection/cdata/valid/images/
+test: /home/balajigrajagopal/pest1/Pest_dectection/cdata/test/images/
 nc: 5
-names: ['Asian-Lady-beetle', 'Ladybug', 'Mealy-bug', 'Pyrilla-perpusilla', 'Stink bug']
+names:
+        0: 'Asian-Lady-beetle'
+        1: 'Ladybug'
+        2: 'Mealy-bug'
+        3: 'Pyrilla-perpusilla'
+        4: 'Stink bug'
 
-roboflow:
-  workspace: pest-dectetion
-  project: pest_id
-  version: 3
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/pest-dectetion/pest_id/dataset/3
